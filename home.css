@@ -1,0 +1,125 @@
+/* Navigasi */
+nav {
+    background-color:#4a1733;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+/* Gaya Navbar */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Efek Hover untuk Navbar */
+nav ul li a:hover {
+    background-color: #bfbcbc; /* Warna latar belakang saat hover */
+    color: #9a9992; /* Warna teks saat hover, ganti sesuai selera */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg'); /* Ganti dengan URL gambar hero Anda */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(101, 68, 88);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+/* Misi */
+.mission-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.mission-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Program Utama */
+/* Memusatkan Program Section di layar */
+.program-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Menggunakan seluruh tinggi layar */
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 2em;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+    max-width: 800px; /* Membatasi lebar untuk membuatnya lebih rapi */
+}
+
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.program-card p {
+    line-height: 1.5;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Scroll Reveal */
+.mission-section, .program-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.mission-section.active, .program-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}

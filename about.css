@@ -1,0 +1,112 @@
+/* Konten About Us */
+.about-section {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.about-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-header p {
+    font-size: 1.1em;
+}
+/* Navigasi */
+nav {
+    background-color:#4a1733;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+/* Gaya Navbar */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Efek Hover untuk Navbar */
+nav ul li a:hover {
+    background-color: #bfbcbc; /* Warna latar belakang saat hover */
+    color: #9a9992; /* Warna teks saat hover, ganti sesuai selera */
+}
+
+/* Bagian Sejarah dan Tujuan */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.history, .mission {
+    background-color: #ddd6d6;
+    padding: 1.5em;
+    border-radius: 8px;
+}
+
+.history h3, .mission h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+/* Tim */
+.team-section {
+    text-align: center;
+}
+
+.team-section h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.team-grid {
+    display: flex; /* Mengubah grid menjadi flexbox */
+    flex-wrap: wrap; /* Membungkus item ke baris berikutnya jika terlalu banyak */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    gap: 1.5em;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    flex: 0 1 200px; /* Memastikan setiap anggota tim memiliki lebar minimum */
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+.team-member:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

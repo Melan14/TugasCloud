@@ -1,0 +1,95 @@
+/* Navigasi */
+nav {
+    background-color:#4a1733;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+/* Gaya Navbar */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Efek Hover untuk Navbar */
+nav ul li a:hover {
+    background-color: #bfbcbc; /* Warna latar belakang saat hover */
+    color: #9a9992; /* Warna teks saat hover, ganti sesuai selera */
+}
+/* Section Kontak */
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contact-section p {
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: #4a1733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Pesan Kesalahan */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 1em;
+}

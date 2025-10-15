@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Lembaga Amal</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Form Kontak -->
+    <section class="contact-section">
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda ingin menjadi relawan atau berdonasi,</p>
+        <p>silakan isi form di bawah ini:</p>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini" required></textarea><br>
+
+            <button type="submit">Kirim</button>
+
+            <!-- Pesan kesalahan -->
+            <div id="error-message" class="error-message"></div>
+        </form>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+</html>

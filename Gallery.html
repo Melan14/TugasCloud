@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Lembaga Amal</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<br>
+    <!-- Filter Galeri -->
+    <div class="filter-buttons">
+        <button onclick="filterGallery('all')">Semua</button>
+        <button onclick="filterGallery('fundraising')">Penggalangan Dana</button>
+        <button onclick="filterGallery('community')">Penyaluran ke Masyarakat</button>
+        <button onclick="filterGallery('education')">Sosialisasi Pendidikan</button>
+        <button onclick="filterGallery('members')">Seluruh Anggota</button>
+    </div>
+
+    <!-- Galeri -->
+    <section class="gallery-section">
+        <h2>Galeri Kegiatan Kami</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item fundraising">
+                <img src="Penggalangan.jpg" alt="Penggalangan Dana" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item community">
+                <img src="Bantuan.jpg" alt="Bantuan Masyarakat" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item education">
+                <img src="pendidikan.jpg" alt="Sosialisasi Pendidikan" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item members">
+                <img src="anggota.jpg" alt="Anggota" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Pop-up -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
